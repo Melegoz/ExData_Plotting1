@@ -52,7 +52,7 @@ Plot4<- function(){
     plot(Global_active_power~Datetime, type="l",
          ylab="Global Active Power", xlab="")
     plot(Voltage~Datetime, type="l",
-         ylab="Voltage (volt)", xlab="")
+         ylab="Voltage", xlab="")
     plot(Sub_metering_1~Datetime, type="l",
          ylab="Energy sub metering", xlab="")
     lines(Sub_metering_2~Datetime,col='Red')
@@ -60,7 +60,7 @@ Plot4<- function(){
     legend("topright", col=c("black", "red", "blue"),
            legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=c(1,1,1), bty="n")
     plot(Global_reactive_power~Datetime, type="l",
-         ylab="Global Rective Power",xlab="", lwd=.001)
+         ylab="Global_rective_power",xlab="", lwd=.001)
   })
   
   # Close the print device before exit, otherwise you won't be able to open the png file
